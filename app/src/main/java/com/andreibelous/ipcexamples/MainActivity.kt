@@ -17,6 +17,7 @@ class MainActivity : AppCompatActivity() {
     private lateinit var image: ImageView
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        tag()
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 

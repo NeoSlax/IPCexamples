@@ -2,7 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.andreibelous.ipcexamples">
 
-    <application>
+    <application
+        android:name=".MyApp"
+        >
 
         <activity
             android:name=".MainActivity"

@@ -7,10 +7,11 @@ import android.os.IBinder
 
 class MyService : Service() {
 
-    override fun onBind(intent: Intent): IBinder =
-
-        object : IFileDescriptor.Stub() {
+    override fun onBind(intent: Intent): IBinder {
+        tag()
+        return object : IFileDescriptor.Stub() {
             override fun file(): AssetFileDescriptor =
                 resources.openRawResourceFd(R.raw.london)
         }
+    }
 }
